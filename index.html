@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>QuizNova | Mani's Quiz Lab</title><link rel="stylesheet" href="style.css"><script src="script.js" defer></script>
+</head>
+<body>
+<header><a class="brand" href="#">Q<span>uizNova</span></a><div class="byline">A learning project by <b>Mani</b></div><button id="theme" aria-label="Toggle theme">☼</button></header>
+<main>
+<section id="home" class="hero">
+<div class="intro"><p class="eyebrow">✦ THINK · SELECT · SHINE</p><h1>Make every<br><em>answer count.</em></h1><p class="lead">A quick challenge for curious minds. Pick a topic, test what you know, and see how far your knowledge takes you.</p><div class="stats"><div><b>10</b><small>Questions</small></div><div><b>4</b><small>Options each</small></div><div><b>∞</b><small>Ways to learn</small></div></div></div>
+<div class="panel setup"><p class="eyebrow">YOUR SESSION</p><h2>Ready to begin?</h2><label for="name">What should we call you?</label><input id="name" maxlength="24" placeholder="Enter your name (optional)"><label>Choose your challenge</label><div class="topics"><button class="topic active" data-topic="tech"><b>⌘ &nbsp; Tech & Coding</b><small>Computers, web and logic</small></button><button class="topic" data-topic="science"><b>⚛ &nbsp; Science Mix</b><small>Physics, space and nature</small></button></div><button class="primary" id="start">Start the quiz <span>↗</span></button><small class="note">No pressure. Just curiosity.</small></div>
+</section>
+<section id="quiz" class="hidden">
+<div class="quiztop"><button class="textbtn" id="exit">← Exit quiz</button><span id="counter">QUESTION 01 / 10</span></div><div class="track"><div id="progress"></div></div>
+<div class="question"><div class="number" id="number">01</div><div><p class="eyebrow">CHOOSE THE BEST ANSWER</p><h2 id="prompt"></h2><div id="answers" class="answers"></div><div class="quizbottom"><p id="feedback">Select one option to continue.</p><button class="primary" id="next" disabled>Next question →</button></div></div></div>
+</section>
+<section id="result" class="hidden result"><div class="medal">✦</div><p class="eyebrow">CHALLENGE COMPLETE</p><h1 id="resultTitle">Brilliant effort.</h1><p id="resultText" class="lead"></p><div class="scorebox"><small>YOUR SCORE</small><div><b id="score">0</b><span>/ 10</span></div><div class="track"><div id="scorebar"></div></div><p><span id="correct">0 correct</span><span id="percent">0% accuracy</span></p></div><button class="primary" id="retry">Try again ↻</button> <button class="secondary" id="homebtn">Back to home</button></section>
+</main><footer><span>© 2026 QuizNova</span><span>Built with HTML · CSS · JavaScript</span></footer>
+</body></html>
